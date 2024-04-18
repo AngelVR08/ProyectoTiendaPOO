@@ -39,7 +39,7 @@
          </font>
       </Button>
    </Pane>
-   <ListView fx:id="listaProductos" layoutX="14.0" layoutY="158.0" prefHeight="600.0" prefWidth="900.0" />
+   <ListView fx:id="listaProductos" layoutX="14.0" layoutY="158.0" prefHeight="600.0" prefWidth="400.0" />
    <Button fx:id="agregarBtn" layoutX="958.0" layoutY="444.0" mnemonicParsing="false" onMouseClicked="#onAgregarFavClick" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #262F40;" text="Añadir a favoritos" textFill="WHITE">
       <font>
          <Font size="20.0" />
@@ -52,7 +52,7 @@
    </Text>
    <TextField fx:id="agregarFavTxt" layoutX="958.0" layoutY="400.0" prefHeight="27.0" prefWidth="200.0" />
    <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="958.0" layoutY="158.0">
-      <Image url="@image/logo.jpg" />
+      <Image url="@imagen/logo.jpg" />
    </ImageView>
    <Label fx:id="masInfoBtn" layoutX="14.0" layoutY="763.0" onMouseClicked="#btnNavegador" text="Mas Informacion" underline="true">
       <font>
@@ -70,4 +70,34 @@
       </font>
    </Text>
    <TextField fx:id="buscarProductTxt" layoutX="957.0" layoutY="542.0" prefHeight="27.0" prefWidth="200.0" />
+   <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="424.0" layoutY="158.0" onMouseClicked="#imagenClick">
+      <image>
+         <Image url="@imagen/Producto1.jpg" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="424.0" layoutY="358.0">
+      <image>
+         <Image url="@imagen/Producto2.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="424.0" layoutY="556.0">
+      <image>
+         <Image url="@imagen/Producto3.jpg" />
+      </image>
+   </ImageView>
+   <Text layoutX="624.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BTS Army Bomb Official Lightstick Special Edition" />
+   <Text layoutX="624.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenido: Bolsa + Lightstick  + Strap. + Caja..." />
+   <Text layoutX="624.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etiquetas: ALBUM, BTS, Kpop, Lightstick" />
+   <Text layoutX="624.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorías: BTS, Lightsticks, Mercancia Oficial" />
+   <Text layoutX="624.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$1,999" />
+   <Text layoutX="624.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BTS Jungkook GOLDEN" />
+   <Text layoutX="624.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenido:Caja / 3 VersionesPhotobook / 3 Versiones..." />
+   <Text layoutX="624.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etiquetas: ALBUM, BTS, Jungkook Golden, Kpop" />
+   <Text layoutX="624.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorías: Albums, BTS, Mercancia Oficial, Novedades" />
+   <Text layoutX="624.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$699" />
+   <Text layoutX="613.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BTS V Layover" />
+   <Text layoutX="613.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenido:out box / 3 versionesPhotobook A..." />
+   <Text layoutX="613.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etiquetas: ALBUM, BTS, promo, taehyung, V Layover" />
+   <Text layoutX="613.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorías: BTS, Albums, Mercancia Oficial, Novedades" />
+   <Text layoutX="613.0" layoutY="731.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$649" />
 </AnchorPane>

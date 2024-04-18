@@ -35,6 +35,15 @@ public class TiendaInicioController {
     private Button verFavBtn;
 
     @FXML
+    void imagenClick (MouseEvent event){
+     HelloApplication.nuevaVentana(event,"TiendaProducto","produto");
+    }
+    @FXML
+    void salirProducto (MouseEvent event){
+        HelloApplication.nuevaVentana(event,"TiendaInicio","inicio");
+    }
+
+    @FXML
     void initialize() {
         Tienda tienda = HelloApplication.getTienda();
         Inventario inventario = tienda.getInventario();

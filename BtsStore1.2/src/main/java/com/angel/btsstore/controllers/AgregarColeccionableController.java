@@ -7,7 +7,6 @@ import com.angel.btsstore.models.Producto;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
@@ -39,7 +38,7 @@ public class AgregarColeccionableController {
         inventarioColetxt.getItems().clear();
         for (Producto i: inventario.getProductos()){
             if (i instanceof Coleccionable){
-                inventarioColetxt.getItems().add(i.toString());
+                inventarioColetxt.getItems().add(((Coleccionable) i).imprimirProduct());
             }
         }
     }

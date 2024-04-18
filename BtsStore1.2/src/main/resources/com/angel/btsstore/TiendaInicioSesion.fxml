@@ -35,7 +35,7 @@
       </font>
    </Button>
    <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="200.0" layoutY="50.0">
-      <Image url="@image/logo.jpg" />
+      <Image url="@imagen/logo.jpg" />
    </ImageView>
    <Label fx:id="crearCuentaBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="649.0" onMouseClicked="#crearUserClick" prefHeight="27.0" prefWidth="115.0" text="Crear Cuenta" underline="true">
       <font>
