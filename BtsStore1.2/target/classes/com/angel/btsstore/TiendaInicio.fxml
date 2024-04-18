@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.angel.btsstore.controllers.TiendaInicioController">
+   <Pane prefHeight="150.0" prefWidth="1200.0" style="-fx-background-color: #040D26;">
+      <Text fill="WHITE" layoutX="440.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BTS-SHOP" textAlignment="CENTER">
+         <font>
+            <Font size="70.0" />
+         </font>
+      </Text>
+      <Button fx:id="iniciarSBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onIniciarSBtnClick" prefHeight="53.0" prefWidth="150.0" style="-fx-background-color: #262F40;" text="Inicia sesion" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="administracionBtn" layoutX="986.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onAdministracionCLick" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #262F40;" text="Administracion" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="verFavBtn" layoutX="14.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#onVerFavClick" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #262F40;" text="♡" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="salirBtn" layoutX="1036.0" layoutY="75.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="150.0" style="-fx-background-color: #262F40;" text="Salir" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </Pane>
+   <ListView fx:id="listaProductos" layoutX="14.0" layoutY="158.0" prefHeight="600.0" prefWidth="900.0" />
+   <Button fx:id="agregarBtn" layoutX="958.0" layoutY="444.0" mnemonicParsing="false" onMouseClicked="#onAgregarFavClick" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #262F40;" text="Añadir a favoritos" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Button>
+   <Text layoutX="958.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <TextField fx:id="agregarFavTxt" layoutX="958.0" layoutY="400.0" prefHeight="27.0" prefWidth="200.0" />
+   <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="958.0" layoutY="158.0">
+      <Image url="@image/logo.jpg" />
+   </ImageView>
+   <Label fx:id="masInfoBtn" layoutX="14.0" layoutY="763.0" onMouseClicked="#btnNavegador" text="Mas Informacion" underline="true">
+      <font>
+         <Font name="Times New Roman" size="20.0" />
+      </font>
+   </Label>
+   <Button fx:id="buscarBtn" layoutX="957.0" layoutY="586.0" mnemonicParsing="false" onMouseClicked="#buscarClick" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #262F40;" text="Buscar producto" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Button>
+   <Text layoutX="957.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <TextField fx:id="buscarProductTxt" layoutX="957.0" layoutY="542.0" prefHeight="27.0" prefWidth="200.0" />
+</AnchorPane>
